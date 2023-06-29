@@ -19,5 +19,5 @@ tr ":" "," < extracted-data.txt > transformed-data.csv
 # Load phase
 echo "Loading data from CSV to PostgreSQL"
 # Send the instructions to connect to 'template1' and
-# copy the file to the table 'users' through command pipeline.
-echo "\c template1;\COPY users  FROM '/home/project/transformed-data.csv' DELIMITERS ',' CSV;" | psql --username=postgres --host=localhost
+# copy the file to the table 'users' through the command pipeline.
+echo "\c template1;\COPY users  FROM '/home/project/transformed-data.csv' DELIMITERS ',' CSV;" | psql --username=xxxxx --host=localhost
